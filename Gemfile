@@ -19,6 +19,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+  gem 'foreman', '~> 0.87.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -52,7 +53,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
-  gem 'foreman', '~> 0.87.1'
   gem 'hirb-unicode', '~> 0.0.5'
   gem 'rspec-rails', '~> 4.0'
   gem 'factory_bot_rails', '~> 5.1', '>= 5.1.1'
