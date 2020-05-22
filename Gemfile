@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'foreman', '~> 0.87.1'
-
+gem 'devise', '~> 4.7', '>= 4.7.1'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
