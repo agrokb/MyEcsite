@@ -8,7 +8,7 @@ const imagePath = (name) => images(name,true);
 import "controllers";
 
 import "../scripts/shared/application";
-import "scripts/frontend";
+import "..//scripts/frontend/application";
 
 import "styles/shared"
 import "styles/frontend"
