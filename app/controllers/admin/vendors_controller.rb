@@ -23,6 +23,10 @@ class Admin::VendorsController < Admin::BaseController
         render :edit
     end
   end
+  def destroy
+    @vendor.destroy
+    redirect_to  admin_vendors_path, notice:'廠商已刪除'
+  end
   private
   def vendor_params
     params.require(:vendor).permit(:title,:description,:online)
