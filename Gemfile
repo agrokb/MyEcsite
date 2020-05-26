@@ -22,6 +22,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'foreman', '~> 0.87.1'
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'figaro', '~> 1.2'
+gem 'friendly_id', '~> 5.3'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'paranoia', '~> 2.1', '>= 2.1.5'
