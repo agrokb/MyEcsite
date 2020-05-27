@@ -1,3 +1,3 @@
 # Procfile to use with foreman
-web: bundle exec rails s
-worker: NODE_ENV=production ./bin/webpack --watch --colors --progress
+web: bin/rails server -p 3000
+webpacker: bin/webpack-dev-server
