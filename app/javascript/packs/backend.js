@@ -7,7 +7,7 @@ require("@rails/actiontext")
 
 import "controllers"
 
-import "scripts/shared";
+import "scripts/shared/application.js";
 import "scripts/backend";
 
 import "styles/shared"

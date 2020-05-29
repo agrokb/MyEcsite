@@ -5,15 +5,13 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="turbolinks-cache-control" content="no-cache">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'backend', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'backend', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
     <%= render 'shared/flash' if notice %>
     <%= render 'shared/manager/navbar' %>
-    <%= render 'shared/frontend/top_menu' %>
     <%= yield %>
-    <%= render 'shared/frontend/footer'%>
   </body>
+  <%= render 'shared/manager/footer'%>
 </html>
