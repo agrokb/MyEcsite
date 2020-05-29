@@ -17,5 +17,8 @@
       <%= link_to "廠商",admin_vendors_path,class:'navbar-item'%>
       <%= link_to "商品",admin_products_path,class:'navbar-item'%>
     </div>
+     <div class="navbar-end">
+      <%= link_to "登出",destroy_manager_session_path	,method:'delete',class:'navbar-item'%>
+    </div>
   </div>
 </nav>
