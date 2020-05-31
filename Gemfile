@@ -18,6 +18,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
+gem 'acts_as_list'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'foreman', '~> 0.87.1'
 gem 'devise', '~> 4.7', '>= 4.7.1'
