@@ -21,6 +21,18 @@ class Admin::CategoriesController < Admin::BaseController
      @category.destroy
      redirect_to  admin_categories_path,notice: '分類已刪除'
    end
+   
+   def edit
+   end
+
+   def update
+    if  @category.update(category_param)
+      redirect_to  admin_categories_path,notice: '分類已更新'
+    else
+      redirect_to  admin_categories_path,notice: '更新失敗'
+    end
+   end
+
 
 
     private
