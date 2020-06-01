@@ -36,7 +36,15 @@ class Admin::ProductsController < Admin::BaseController
       @product = Product.friendly.find(params[:id])
     end
     def product_params
-     params.require(:product).permit(:name,:vendor_id,:list_price,:sell_price,:on_sell,:description,skus_attributes:[
+     params.require(:product).permit(:name,
+      :vendor_id,
+      :list_price,
+      :sell_price,
+      :on_sell,
+      :cover_image,
+      :category_id,
+      :description,
+      skus_attributes:[
         :id,:spec,:quantity,:_destroy
      ])
     end
