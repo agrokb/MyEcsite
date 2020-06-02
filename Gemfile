@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
+#google oauth2
 gem 'omniauth-google-oauth2', '~> 0.8.0'
 # Use ActiveStorage variant
 gem 'mini_magick', '~> 4.8'
@@ -23,11 +24,15 @@ gem 'jbuilder', '~> 2.7'
 gem 'acts_as_list'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'foreman', '~> 0.87.1'
+#login 
 gem 'devise', '~> 4.7', '>= 4.7.1'
+#Add env variable to project
 gem 'figaro', '~> 1.2'
+#special url 
 gem 'friendly_id', '~> 5.3'
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.2'
+#soft delete
 gem 'paranoia', '~> 2.1', '>= 2.1.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
