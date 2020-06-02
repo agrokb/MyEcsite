@@ -18,14 +18,12 @@ RSpec.describe Cart, type: :model do
     end
     it "入れた商品、取り消できる" do
      cart = Cart.new
-     
-     v1 = Vendor.create(title: 'v1')
-     p1 = Product.create(name: 'kk',list_price: 10,sell_price: 5,vendor: v1)
-
+    #  v1 = Vendor.create(title: 'v1')
+    #  p1 = Product.create(name: 'kk',list_price: 10,sell_price: 5,vendor: v1)
+     p1 = FactoryBot.create(:product)
      cart.add_item(p1.id)
 
      expect(cart.items.first.product).to be_a Product
-     p v1
     end
   end
   
