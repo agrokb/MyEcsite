@@ -24,18 +24,35 @@ RSpec.describe Cart, type: :model do
      expect(cart.items.first.product).to be_a Product
     end
 
-    it "可以計算整台購物車的總消費金額"
-    cart = Cart.new
-    p1 = FactoryBot.create(:product, sell_price: 5)
-    p2 = FactoryBot.create(:product, sell_price: 10)
+    it "可以計算整台購物車的總消費金額" do
+     cart = Cart.new
+     p1 = FactoryBot.create(:product, sell_price: 5)
+     p2 = FactoryBot.create(:product, sell_price: 10)
 
-    3.times{ cart.add_item(p1.id)}
-    2.times{ cart.add_item(p2.id)}
+     3.times{ cart.add_item(p1.id)}
+     2.times{ cart.add_item(p2.id)}
 
-    expect(cart.total_price).to eq 35
+     expect(cart.total_price).to eq 35
     end
   end
   
   context "追加機能" do
+    it "可以將購物車內容轉換成Hash並存到Session裡" do
+      cart = Cart.new
+      p1 = FactoryBot.create(:product, sell_price: 5)
+      p2 = FactoryBot.create(:product, sell_price: 10)
+
+      3.times{ cart.add_item(p1.id)}
+      2.times{ cart.add_item(p2.id)}
+
+      cart_hash = {
+        "items" => [
+          {"product_id" => 1,"quantity" => 3},
+          {"product_id" => 2,"quantity" => 2},
+        ]
+      }
+      
+      expect(cart.serialize).to eq cart_hash
+   end
   end
 end
