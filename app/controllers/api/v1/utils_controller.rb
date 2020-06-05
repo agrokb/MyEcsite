@@ -17,7 +17,7 @@ class Api::V1::UtilsController < ApplicationController
 
       session[:cart_9527] = current_cart.serialize
 
-      render json: {status: 'ok',items: current_cart.items.count}
+      render json: {status: 'ok',items: current_cart.items.count }
     end
   end
 
