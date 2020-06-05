@@ -7,7 +7,7 @@ RSpec.describe Cart, type: :model do
 
     it "カゴに商品を入れる" do
       cart.add_item(2) 
-      expect(car).not_to be_empty
+      expect(cart).not_to be_empty
 
     end
     it "同じ種類の商品カゴに入れて、購入項目増加さず、商品の数は変更できる" do
