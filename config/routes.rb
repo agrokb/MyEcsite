@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   resources :products,only: [:index,:show]
   resources :categories, only: [:show]
-  resource :cart,only: [:show,:destory]
+  resource :cart,only: [:show,:destory] do
+     collection do
+      get :checkout
+     end
+  end
 
   namespace :admin do
     root 'products#index'
