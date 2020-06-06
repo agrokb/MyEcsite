@@ -9,6 +9,10 @@ Rails.application.routes.draw do
       get :checkout
      end
   end
+  
+  resources :orders, except: [:new,:edit, :update, :destory]
+
+
 
   namespace :admin do
     root 'products#index'

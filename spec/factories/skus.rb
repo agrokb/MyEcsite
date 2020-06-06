@@ -1,8 +1,11 @@
 FactoryBot.define do
   factory :sku do
-    product { nil }
-    spec { "MyString" }
-    quantity { 1 }
-    deleted_at { "2020-05-28 00:36:57" }
+   spec {Faker::Name.name}
+   quantity {Faker::Number.between(from:1,to:10)}
+
+
+   product  #belong product
   end
 end
+
+

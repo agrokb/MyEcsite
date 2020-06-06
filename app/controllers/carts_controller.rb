@@ -9,6 +9,6 @@ class CartsController < ApplicationController
   end
 
   def checkout
-    
+    @order = current_user.orders.build
   end
 end
