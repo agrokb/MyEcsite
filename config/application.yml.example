@@ -1,2 +1,5 @@
 google_app_id:'YOUR-APP-ID'
 google_app_secret:'YOUR-APP-SECRET'
+
+line_pay_channel_id: 'YOUR-CHANNEL-ID'
+line_pay_channel_secret: 'YOUR-CHANNEL-SECRET'
