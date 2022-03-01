@@ -31,7 +31,7 @@ gem 'figaro', '~> 1.2'
 #special url 
 gem 'friendly_id', '~> 5.3'
 # Use Active Storage variant
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 #soft delete
 gem 'paranoia', '~> 2.1', '>= 2.1.5'
 # Reduces boot times through caching; required in config/boot.rb
